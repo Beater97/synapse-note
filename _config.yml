@@ -1,0 +1,15 @@
+# Il sito di GitHub Pages.
+#
+# Non c'è nessun index.md: Pages, con un tema Jekyll attivo, pubblica il README.md come pagina
+# iniziale. Una copia del testo in una seconda cartella sarebbe la prima cosa a invecchiare.
+#
+# Per accenderlo: Settings → Pages → Source: "Deploy from a branch" → main → / (root).
+# Gratis su qualunque repository pubblica.
+
+title: Synapse
+description: Le tue note, sul tuo computer. Otto tipi di nota, un editor vero per ognuno, e un assistente che gira in locale.
+theme: jekyll-theme-cayman
+
+# Niente di quel che sta qui sotto finisce nel sito.
+exclude:
+  - LICENZA.md
