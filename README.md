@@ -5,7 +5,7 @@
 **Your notes, on your computer. Eight kinds of note, a real editor for each one, and an assistant that runs locally.**
 
 [![Download](https://img.shields.io/badge/Download-Windows-2ea44f?style=for-the-badge)](../../releases/latest)
-[![Version](https://img.shields.io/badge/version-1.6.4-blue?style=for-the-badge)](../../releases)
+[![Version](https://img.shields.io/badge/version-1.6.5-blue?style=for-the-badge)](../../releases)
 [![Platform](https://img.shields.io/badge/Windows-10%20and%2011-0078D4?style=for-the-badge&logo=windows)](../../releases/latest)
 
 🇬🇧 English · [🇮🇹 Italiano](README.it.md)
@@ -164,6 +164,7 @@ It knows where you are (the note you have open, the folder you're in) and who yo
 - **The assistant runs on your machine** with Ollama: your notes don't leave it.
 - **Password vaults** use a key derived with **Argon2id** (64 MB, 3 passes) and content encrypted with **AES-256-GCM**, with a fresh nonce for every write.
 - **The master password is stored nowhere.** Forget it and the secrets are lost — which is exactly why nobody else can open them.
+- **Nothing is sent anywhere.** The full statement is in the [privacy policy](PRIVACY.md).
 - **Ollama and Python aren't bundled**: Synapse uses what's on your machine, and without them the app still works — just without the assistant and without runnable cells.
 
 ---

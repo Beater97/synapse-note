@@ -5,7 +5,7 @@
 **Le tue note, sul tuo computer. Otto tipi di nota, un editor vero per ognuno, e un assistente che gira in locale.**
 
 [![Scarica](https://img.shields.io/badge/Scarica-Windows-2ea44f?style=for-the-badge)](../../releases/latest)
-[![Versione](https://img.shields.io/badge/versione-1.6.4-blue?style=for-the-badge)](../../releases)
+[![Versione](https://img.shields.io/badge/versione-1.6.5-blue?style=for-the-badge)](../../releases)
 [![Piattaforma](https://img.shields.io/badge/Windows-10%20e%2011-0078D4?style=for-the-badge&logo=windows)](../../releases/latest)
 
 [🇬🇧 English](README.md) · 🇮🇹 Italiano
@@ -164,6 +164,7 @@ Sa dove sei (la nota aperta, la cartella in cui stai) e sa chi sei (due righe sc
 - **L'assistente gira sul tuo computer** con Ollama: le note non escono.
 - **Gli archivi password** usano una chiave derivata con **Argon2id** (64 MB, 3 passate) e contenuto cifrato con **AES-256-GCM**, con un nonce nuovo per ogni scrittura.
 - **La password principale non è salvata da nessuna parte.** Se la dimentichi, i segreti sono persi — ed è esattamente la ragione per cui nessun altro può aprirli.
+- **Niente viene mandato da nessuna parte.** Il testo completo è nell'[informativa sulla privacy](PRIVACY.it.md).
 - **Ollama e Python non sono impacchettati**: si usa quel che c'è sulla macchina, e senza, l'app funziona lo stesso — solo senza assistente e senza celle eseguibili.
 
 ---
