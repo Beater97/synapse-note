@@ -5,8 +5,12 @@
 **Le tue note, sul tuo computer. Otto tipi di nota, un editor vero per ognuno, e un assistente che gira in locale.**
 
 [![Scarica](https://img.shields.io/badge/Scarica-Windows-2ea44f?style=for-the-badge)](../../releases/latest)
-[![Versione](https://img.shields.io/badge/versione-1.5.5-blue?style=for-the-badge)](../../releases)
+[![Versione](https://img.shields.io/badge/versione-1.6.4-blue?style=for-the-badge)](../../releases)
 [![Piattaforma](https://img.shields.io/badge/Windows-10%20e%2011-0078D4?style=for-the-badge&logo=windows)](../../releases/latest)
+
+<br>
+
+<img src="immagini/home.png" alt="La home di Synapse" width="860">
 
 </div>
 
@@ -65,6 +69,17 @@ Non è un dettaglio tecnico, è la regola che tiene in piedi il resto:
 
 ## Gli otto tipi di nota
 
+<div align="center">
+
+| | |
+| :---: | :---: |
+| <img src="immagini/postit.png" alt="Un postit" width="420"> | <img src="immagini/foglio.png" alt="Un foglio di calcolo" width="420"> |
+| **Postit** — testo ricco, allegati, collegamenti fra note | **Foglio** — formule, filtri, validazione |
+| <img src="immagini/diagramma.png" alt="Un diagramma" width="420"> | <img src="immagini/tela.png" alt="Una tela" width="420"> |
+| **Diagramma** — lo scrivi, si disegna | **Tela** — blocchi su un piano infinito |
+
+</div>
+
 ### 📝 Postit
 Testo ricco in Markdown. Titoli, elenchi, tabelle, citazioni, codice, colori del testo, immagini incollate o trascinate, allegati di qualunque tipo. Scrivendo `[[` compare l'elenco delle tue note: il collegamento resta vivo anche se la nota cambia titolo.
 
@@ -94,6 +109,10 @@ La nota che non è una nota: i suoi dati non stanno nel contenuto, stanno **cifr
 ---
 
 ## Synapse AI
+
+<div align="center">
+<img src="immagini/ai.png" alt="Il pannello di Synapse AI" width="860">
+</div>
 
 Un assistente che gira **in locale** con [Ollama](https://ollama.com). Nessun testo esce dal computer.
 
