@@ -1,24 +1,24 @@
 ---
-name: Segnala un problema
-about: Qualcosa non funziona come dovrebbe
+name: Report a problem
+about: Something isn't working the way it should
 title: ''
 labels: bug
 assignees: ''
 ---
 
-**Cosa stavi facendo**
-Il gesto, passo per passo. «Ho aperto una cartella, selezionato tre note, tasto destro…»
+**What you were doing**
+The steps, one by one. "I opened a folder, selected three notes, right-clicked…"
 
-**Cosa ti aspettavi**
+**What you expected**
 
-**Cosa è successo invece**
+**What happened instead**
 
-**Versione di Synapse**
-La trovi in Impostazioni → Informazioni.
+**Synapse version**
+Settings → About.
 
 **Windows**
-10 o 11, e la build se la sai.
+10 or 11, and the build number if you know it.
 
-**Registro degli errori** *(se l'app si è aperta bianca, o è andata in errore)*
-Allega `%APPDATA%\com.scrig.synapse\errori.log`, o incolla qui le ultime righe.
-Se hai spostato la cartella dei dati, il registro sta nella cartella nuova.
+**Error log** *(if the app came up blank, or threw an error)*
+Attach `%APPDATA%\com.scrig.synapse\errori.log`, or paste the last few lines here.
+If you moved your data folder, the log is in the new one.

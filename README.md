@@ -2,220 +2,222 @@
 
 # Synapse
 
-**Le tue note, sul tuo computer. Otto tipi di nota, un editor vero per ognuno, e un assistente che gira in locale.**
+**Your notes, on your computer. Eight kinds of note, a real editor for each one, and an assistant that runs locally.**
 
-[![Scarica](https://img.shields.io/badge/Scarica-Windows-2ea44f?style=for-the-badge)](../../releases/latest)
-[![Versione](https://img.shields.io/badge/versione-1.6.4-blue?style=for-the-badge)](../../releases)
-[![Piattaforma](https://img.shields.io/badge/Windows-10%20e%2011-0078D4?style=for-the-badge&logo=windows)](../../releases/latest)
+[![Download](https://img.shields.io/badge/Download-Windows-2ea44f?style=for-the-badge)](../../releases/latest)
+[![Version](https://img.shields.io/badge/version-1.6.4-blue?style=for-the-badge)](../../releases)
+[![Platform](https://img.shields.io/badge/Windows-10%20and%2011-0078D4?style=for-the-badge&logo=windows)](../../releases/latest)
+
+🇬🇧 English · [🇮🇹 Italiano](README.it.md)
 
 <br>
 
-<img src="immagini/home.png" alt="La home di Synapse" width="860">
+<img src="immagini/home.png" alt="The Synapse home screen" width="860">
 
 </div>
 
 ---
 
-## In due righe
+## In two lines
 
-Synapse è un'app di note per Windows che gira **interamente sul tuo computer**. Nessun account, nessuna sincronizzazione, nessuna telemetria: i dati stanno in un file SQLite nella tua cartella, e basta.
+Synapse is a note-taking app for Windows that runs **entirely on your computer**. No account, no sync, no telemetry: your data lives in a SQLite file in your own folder, and that's it.
 
-La differenza con le altre app di note è che qui una nota non è una sola cosa: sono **otto tipi diversi**, ognuno col suo editor vero — e un assistente locale che li sa leggere e scrivere tutti.
+What sets it apart from other note apps is that here a note isn't one single thing: there are **eight different kinds**, each with a real editor of its own — and a local assistant that can read and write all of them.
 
-> **Questa repository contiene l'applicazione, non il codice sorgente.** Qui trovi il download, la documentazione e le note di rilascio.
+> **This repository holds the application, not the source code.** What you'll find here is the download, the documentation and the release notes.
 
 ---
 
-## Scarica
+## Download
 
-**[⬇️ Ultima versione per Windows](../../releases/latest)**
+**[⬇️ Latest version for Windows](../../releases/latest)**
 
-Scarica `Synapse_x.y.z_x64-setup.exe` e aprilo. L'installazione non richiede altro.
+Download `Synapse_x.y.z_x64-setup.exe` and open it. Installing takes nothing else.
 
 | | |
 | --- | --- |
-| **Sistema** | Windows 10 (1809+) o Windows 11, 64 bit |
-| **Spazio** | ~60 MB installata |
-| **Dipendenze** | nessuna obbligatoria |
-| **Facoltativi** | [Ollama](https://ollama.com) per l'assistente, [Python](https://www.python.org) per le celle eseguibili |
+| **System** | Windows 10 (1809+) or Windows 11, 64-bit |
+| **Disk** | ~60 MB installed |
+| **Dependencies** | none required |
+| **Optional** | [Ollama](https://ollama.com) for the assistant, [Python](https://www.python.org) for runnable cells |
 
-Windows può mostrare l'avviso di SmartScreen la prima volta: è normale per un installer non ancora firmato con un certificato commerciale. **Ulteriori informazioni → Esegui comunque.**
+Windows may show a SmartScreen warning the first time: that's normal for an installer not yet signed with a commercial certificate. **More info → Run anyway.**
 
 ---
 
-## L'idea sotto: tutto è testo
+## The idea underneath: everything is text
 
-Ogni nota, di qualunque tipo, ha il contenuto salvato come **testo semplice**.
+Every note, whatever its kind, keeps its content as **plain text**.
 
-| Tipo | Formato del contenuto |
+| Kind | Content format |
 | --- | --- |
 | Postit | Markdown |
-| Lista | Markdown task-list (`- [ ] cosa fare`) |
-| Foglio | CSV |
-| Diagramma | sorgente Mermaid |
-| Notebook | Markdown con blocchi ```` ```python ```` |
-| API | JSON o YAML OpenAPI |
-| Tela | JSON di scena |
-| Archivio password | *(vuoto — i segreti stanno cifrati in una tabella a parte)* |
+| List | Markdown task list (`- [ ] something to do`) |
+| Sheet | CSV |
+| Diagram | Mermaid source |
+| Notebook | Markdown with ```` ```python ```` blocks |
+| API | OpenAPI JSON or YAML |
+| Canvas | scene JSON |
+| Password vault | *(empty — secrets live encrypted in a table of their own)* |
 
-Non è un dettaglio tecnico, è la regola che tiene in piedi il resto:
+That's not an implementation detail, it's the rule everything else stands on:
 
-- **si cerca dentro tutto**, senza un parser per tipo;
-- **si esporta tutto**, senza formati opachi;
-- **l'assistente legge e scrive tutto**, senza casi speciali;
-- un notebook aperto come postit resta un documento sensato.
+- **search goes inside all of it**, without a parser per kind;
+- **all of it exports**, with no opaque formats;
+- **the assistant reads and writes all of it**, with no special cases;
+- a notebook opened as a postit is still a sensible document.
 
 ---
 
-## Gli otto tipi di nota
+## The eight kinds of note
 
 <div align="center">
 
 | | |
 | :---: | :---: |
-| <img src="immagini/postit.png" alt="Un postit" width="420"> | <img src="immagini/foglio.png" alt="Un foglio di calcolo" width="420"> |
-| **Postit** — testo ricco, allegati, collegamenti fra note | **Foglio** — formule, filtri, validazione |
-| <img src="immagini/diagramma.png" alt="Un diagramma" width="420"> | <img src="immagini/tela.png" alt="Una tela" width="420"> |
-| **Diagramma** — lo scrivi, si disegna | **Tela** — blocchi su un piano infinito |
+| <img src="immagini/postit.png" alt="A postit" width="420"> | <img src="immagini/foglio.png" alt="A spreadsheet" width="420"> |
+| **Postit** — rich text, attachments, links between notes | **Sheet** — formulas, filters, validation |
+| <img src="immagini/diagramma.png" alt="A diagram" width="420"> | <img src="immagini/tela.png" alt="A canvas" width="420"> |
+| **Diagram** — you write it, it draws itself | **Canvas** — blocks on an endless plane |
 
 </div>
 
 ### 📝 Postit
-Testo ricco in Markdown. Titoli, elenchi, tabelle, citazioni, codice, colori del testo, immagini incollate o trascinate, allegati di qualunque tipo. Scrivendo `[[` compare l'elenco delle tue note: il collegamento resta vivo anche se la nota cambia titolo.
+Rich text in Markdown. Headings, lists, tables, quotes, code, text colours, images pasted or dragged in, attachments of any kind. Type `[[` and your notes appear: the link stays alive even if the note is renamed.
 
-**Con l'assistente:** evidenzia una frase e scegli *riscrivi, correggi, accorcia, traduci*, o chiedi a parole cosa farne. Il testo si riscrive sul posto, e `Ctrl+Z` lo riporta indietro.
+**With the assistant:** highlight a sentence and pick *rewrite, fix, shorten, translate* — or just say what to do with it. The text is rewritten in place, and `Ctrl+Z` brings it back.
 
-### ✅ Lista
-Cose da fare: caselle da spuntare, rientri fino a quattro livelli, riordino trascinando, scadenze (`📅 2026-12-31`) e priorità (⏫ 🔼 🔽). Il contenuto resta Markdown, quindi la stessa nota letta come postit ha comunque senso.
+### ✅ List
+Things to do: checkboxes, indentation up to four levels, drag to reorder, due dates (`📅 2026-12-31`) and priorities (⏫ 🔼 🔽). The content stays Markdown, so the same note read as a postit still makes sense.
 
-### 📊 Foglio
-Un foglio di calcolo vero: formule (`=SOMMA(B2:B5)`), riempimento automatico trascinando, trova e sostituisci, filtri per colonna, validazione delle celle, colori di sfondo. Il contenuto resta CSV: si apre in Excel senza conversioni.
+### 📊 Sheet
+A real spreadsheet: formulas (`=SUM(B2:B5)`), drag to autofill, find and replace, per-column filters, cell validation, background colours. The content stays CSV: it opens in Excel with no conversion.
 
-### 🔀 Diagramma
-Lo scrivi, si disegna da solo. Sorgente **Mermaid**: flowchart, sequence, class, state, gantt, ER, mindmap, timeline, git graph e il resto. Anteprima viva mentre scrivi, galleria di modelli, pan e zoom sul disegno.
+### 🔀 Diagram
+You write it, it draws itself. **Mermaid** source: flowchart, sequence, class, state, gantt, ER, mindmap, timeline, git graph and the rest. Live preview as you type, a gallery of templates, pan and zoom on the drawing.
 
 ### 🧪 Notebook
-Celle di codice che **girano davvero**, in un interprete installato sul tuo computer: **Python** e **Node**. Le celle condividono lo stato, l'output scorre mentre la cella lavora, i grafici matplotlib diventano immagini. Gli output non vengono salvati: durano quanto la nota resta aperta.
+Code cells that **actually run**, in an interpreter installed on your computer: **Python** and **Node**. Cells share state, output streams while the cell works, matplotlib charts come back as images. Output isn't saved: it lasts as long as the note stays open.
 
 ### 🔌 API
-Una specifica **OpenAPI/Swagger** da leggere: si incolla o si prende da un indirizzo, e diventa un elenco di endpoint navigabili con parametri, schemi, risposte ed esempi.
+An **OpenAPI/Swagger** spec to read: paste it or pull it from a URL, and it becomes a browsable list of endpoints with parameters, schemas, responses and examples.
 
-### 🎨 Tela
-Blocchi appoggiati su un piano infinito: testi, note collegate, file, immagini, riquadri, etichette, frecce fra un blocco e l'altro — e persino pagine web vive dentro un blocco. Serve quando le cose stanno insieme per **come sono disposte**.
+### 🎨 Canvas
+Blocks laid out on an endless plane: text, linked notes, files, images, frames, labels, arrows between one block and another — and even live web pages inside a block. For when things belong together because of **how they're arranged**.
 
-### 🔒 Archivio password
-La nota che non è una nota: i suoi dati non stanno nel contenuto, stanno **cifrati** in una tabella a parte. Si apre con la password principale, si richiude da solo, ha un generatore di password. Non si cerca, non si esporta in chiaro, l'assistente non lo vede.
+### 🔒 Password vault
+The note that isn't a note: its data doesn't live in the content, it lives **encrypted** in a table of its own. It opens with your master password, locks itself again after a while, and comes with a password generator. It isn't searched, it isn't exported in the clear, and the assistant never sees it.
 
 ---
 
 ## Synapse AI
 
 <div align="center">
-<img src="immagini/ai.png" alt="Il pannello di Synapse AI" width="860">
+<img src="immagini/ai.png" alt="The Synapse AI panel" width="860">
 </div>
 
-Un assistente che gira **in locale** con [Ollama](https://ollama.com). Nessun testo esce dal computer.
+An assistant that runs **locally** with [Ollama](https://ollama.com). No text leaves your computer.
 
-Non è una chat di lato: è una **colonna dell'app**, e ha gli strumenti veri —
+It isn't a chat bolted on the side: it's a **column of the app**, and it has the app's real tools —
 
-| Strumento | Cosa fa |
+| Tool | What it does |
 | --- | --- |
-| `cerca_note` | cerca fra tutte le tue note |
-| `leggi_nota` | legge una nota trovata |
-| `elenca_struttura` | guarda com'è organizzata la libreria |
-| `crea_nota` | scrive una nota nuova, del tipo giusto |
-| `aggiorna_nota` | riscrive una nota che c'è già |
-| `crea_cartella` · `sposta_nota` · `cestina_nota` | mette ordine |
-| `cerca_web` · `leggi_pagina` | va a vedere in rete |
+| `cerca_note` | searches across all your notes |
+| `leggi_nota` | reads a note it found |
+| `elenca_struttura` | looks at how your library is organised |
+| `crea_nota` | writes a new note, of the right kind |
+| `aggiorna_nota` | rewrites a note that already exists |
+| `crea_cartella` · `sposta_nota` · `cestina_nota` | tidies up |
+| `cerca_web` · `leggi_pagina` | goes and looks online |
 
-Li **concatena**: cerca, legge quel che ha trovato, poi scrive. Tutto quello che fa resta scritto passo per passo, e le pastiglie della traccia sono cliccabili: aprono la nota o la cartella che ha toccato.
+It **chains them**: searches, reads what it found, then writes. Everything it does is written down step by step, and the pills in the trail are clickable — they open the note or the folder it touched.
 
-Sa dove sei (la nota aperta, la cartella in cui stai) e sa chi sei (due righe scritte da te nelle impostazioni, che rileggi e cancelli quando vuoi).
+It knows where you are (the note you have open, the folder you're in) and who you are (two lines you write in the settings, which you can re-read and delete whenever you like).
 
 ---
 
-## Il resto
+## Everything else
 
-**Organizzare** — categorie colorate in home, cartelle annidate a piacere, alberatura sempre a sinistra (`Ctrl+L`), selezione a rettangolo, copia/taglia/incolla, ordinamento ricordato per cartella.
+**Organising** — coloured categories on the home screen, folders nested as deep as you like, a file tree always on the left (`Ctrl+L`), rubber-band selection, copy/cut/paste, sort order remembered per folder.
 
-**Le finestre** — una nota si stacca in una finestra sua (con l'assistente dentro), o si appiccica sulla scrivania sopra tutte le altre.
+**Windows** — a note detaches into a window of its own (assistant included), or sticks to your desktop above everything else.
 
-**Nota veloce** — `Ctrl+Alt+N` da qualunque programma: compare una finestrella, scrivi, `Ctrl+Invio`, sparisce.
+**Quick note** — `Ctrl+Alt+N` from whatever program you're in: a small window appears, you type, `Ctrl+Enter`, it's gone.
 
-**Cercare** — dalla barra in alto, mentre digiti, dentro titoli e contenuti di tutti i tipi, col percorso completo sotto ogni risultato.
+**Search** — from the top bar, as you type, across titles and contents of every kind, with the full path under each result.
 
-**Importare** — trascina un file dentro: PDF e Word diventano postit, Excel e CSV diventano fogli, `.ipynb` diventa un notebook.
+**Import** — drag a file in: PDFs and Word files become postits, Excel and CSV become sheets, `.ipynb` becomes a notebook.
 
-**Esportare** — ogni tipo esce nel formato che gli somiglia: postit e liste in Word, fogli in Excel (coi valori calcolati), diagrammi in PNG, notebook in `.ipynb`, archivi in ZIP protetto. Una cartella intera esce come PDF unico.
+**Export** — each kind leaves in the format that suits it: postits and lists as Word, sheets as Excel (with computed values), diagrams as PNG, notebooks as `.ipynb`, vaults as a password-protected ZIP. A whole folder comes out as a single PDF.
 
-**Il cestino** — «elimina» non cancella: manda nel cestino, e da lì si torna indietro per 30 giorni.
+**Trash** — "delete" doesn't delete: it goes to the trash, and you can bring it back for 30 days.
 
-**Dati e backup** — la cartella dei dati la scegli tu; il backup è uno ZIP con database e allegati, a mano o automatico con rotazione delle copie.
+**Data and backup** — you choose where your data folder lives; a backup is a ZIP with the database and the attachments, made by hand or automatically, keeping the last N copies.
 
-**Aspetto** — tema chiaro/scuro/di sistema, sfondo personalizzato, carattere, zoom, sette tavolozze per i colori delle categorie.
+**Appearance** — light/dark/system theme, custom background, font, zoom, seven palettes for category colours.
 
 ---
 
 ## Privacy
 
-- **Tutto in locale.** Un file SQLite nella tua cartella dati. Nessun account, nessun server, nessuna telemetria.
-- **L'assistente gira sul tuo computer** con Ollama: le note non escono.
-- **Gli archivi password** usano una chiave derivata con **Argon2id** (64 MB, 3 passate) e contenuto cifrato con **AES-256-GCM**, con un nonce nuovo per ogni scrittura.
-- **La password principale non è salvata da nessuna parte.** Se la dimentichi, i segreti sono persi — ed è esattamente la ragione per cui nessun altro può aprirli.
-- **Ollama e Python non sono impacchettati**: si usa quel che c'è sulla macchina, e senza, l'app funziona lo stesso — solo senza assistente e senza celle eseguibili.
+- **All local.** A SQLite file in your data folder. No account, no server, no telemetry.
+- **The assistant runs on your machine** with Ollama: your notes don't leave it.
+- **Password vaults** use a key derived with **Argon2id** (64 MB, 3 passes) and content encrypted with **AES-256-GCM**, with a fresh nonce for every write.
+- **The master password is stored nowhere.** Forget it and the secrets are lost — which is exactly why nobody else can open them.
+- **Ollama and Python aren't bundled**: Synapse uses what's on your machine, and without them the app still works — just without the assistant and without runnable cells.
 
 ---
 
-## Scorciatoie
+## Shortcuts
 
-| Tasti | Cosa fa |
+| Keys | What it does |
 | --- | --- |
-| `Ctrl+Alt+N` | nota veloce, da qualunque programma |
-| `Ctrl+Alt+Invio` | mostra e nasconde l'app, da qualunque programma |
-| `Ctrl+K` | apre e chiude Synapse AI |
-| `Ctrl+L` | apre e chiude l'alberatura |
-| `Ctrl+F` | cerca dentro la nota aperta |
-| `Esc` | torna indietro di un passo |
-| Tasto destro | ovunque: le azioni di quella cosa |
+| `Ctrl+Alt+N` | quick note, from any program |
+| `Ctrl+Alt+Enter` | shows and hides the app, from any program |
+| `Ctrl+K` | opens and closes Synapse AI |
+| `Ctrl+L` | opens and closes the file tree |
+| `Ctrl+F` | search inside the note you have open |
+| `Esc` | go back one step |
+| Right-click | anywhere: the actions for that thing |
 
 ---
 
-## Domande
+## Questions
 
-**Dove finiscono i miei dati?**
-In `C:\Users\<tu>\.synapse` — database, allegati e sfondi. Dalle impostazioni puoi spostare la cartella dove vuoi, anche su un altro disco.
+**Where does my data end up?**
+In `C:\Users\<you>\.synapse` — database, attachments and backgrounds. From the settings you can move the folder wherever you want, another drive included.
 
-**Come faccio un backup?**
-Impostazioni → *Dati e backup*. A mano quando vuoi, o automatico (a ogni avvio, ogni giorno, ogni settimana) tenendo le ultime N copie. Il file `.synapsebak` è uno ZIP con dentro database e allegati.
+**How do I make a backup?**
+Settings → *Data and backup*. By hand whenever you like, or automatically (on every start, daily, weekly), keeping the last N copies. The `.synapsebak` file is a ZIP with the database and the attachments inside.
 
-**Serve internet?**
-No. Solo se chiedi all'assistente di cercare in rete, o se apri una pagina web dentro una tela.
+**Do I need an internet connection?**
+No. Only if you ask the assistant to search online, or open a web page inside a canvas.
 
-**Serve un abbonamento?**
-No. Nessun account, nessun pagamento, nessun limite.
+**Is there a subscription?**
+No. No account, no payment, no limits.
 
-**Posso usarla senza Ollama?**
-Sì. Senza, non c'è l'assistente: tutto il resto funziona.
+**Can I use it without Ollama?**
+Yes. Without it there's no assistant: everything else works.
 
-**Il codice sorgente è disponibile?**
-No, non in questa repository. Qui ci sono l'applicazione e la documentazione.
+**Is the source code available?**
+Not in this repository. What's here is the application and its documentation.
 
 ---
 
-## Segnalare un problema
+## Reporting a problem
 
-Apri una [issue](../../issues) e scrivi cosa stavi facendo, cosa ti aspettavi e cosa è successo. Se l'app si è aperta bianca o è andata in errore, allega il file:
+Open an [issue](../../issues) and write what you were doing, what you expected and what happened instead. If the app came up blank or threw an error, attach this file:
 
 ```
 %APPDATA%\com.scrig.synapse\errori.log
 ```
 
-*(Se hai spostato la cartella dei dati, il registro è nella cartella nuova.)*
+*(If you moved your data folder, the log is in the new one.)*
 
 ---
 
 <div align="center">
 
-Fatto da **Danilo Scrignoli** · Windows · Tauri 2 · SQLite
+Made by **Danilo Scrignoli** · Windows · Tauri 2 · SQLite
 
 </div>
