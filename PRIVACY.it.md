@@ -46,7 +46,7 @@ Synapse funziona completamente offline. Le connessioni avvengono **solo** in que
 
 | Cosa fai | Dove va la richiesta | Cosa viene mandato |
 | --- | --- | --- |
-| Usi l'assistente | `127.0.0.1:11434` — [Ollama](https://ollama.com), sulla tua macchina | la tua richiesta e la nota che hai aperto; non escono dal computer |
+| Usi l'assistente | `127.0.0.1:11434` — [Ollama](https://ollama.com), sulla tua macchina | la tua richiesta e la nota che hai aperto. Con un modello scaricato in locale non escono dal computer; con un modello **cloud** di Ollama, è Ollama a inoltrarli ai propri server — vedi sotto |
 | Chiedi all'assistente di cercare in rete | `html.duckduckgo.com` | soltanto le parole cercate |
 | Chiedi di leggere una pagina, o carichi una specifica API da un indirizzo | l'indirizzo che indichi tu | soltanto la richiesta |
 | Apri una pagina web dentro un blocco della tela | il sito che apri | quello che manda un browser qualunque: quel sito ti vede, come ti vedrebbe altrove |
@@ -54,11 +54,23 @@ Synapse funziona completamente offline. Le connessioni avvengono **solo** in que
 
 Nient'altro. Nessuna statistica d'uso, nessun «segnale a casa», nessun controllo aggiornamenti che porti con sé un identificativo. Puoi verificarlo con un firewall: blocca l'app del tutto e tutto continua a funzionare tranne i casi qui sopra.
 
+**In nessuno di questi casi Synapse raccoglie qualcosa.** Cosa ne fa un terzo di una richiesta che hai chiesto tu — DuckDuckGo delle parole cercate, un sito che hai aperto, Ollama con un modello cloud — lo dice l'informativa di quel terzo.
+
 ## L'assistente
 
-L'assistente gira **sul tuo computer**, tramite Ollama, con un modello che hai scaricato tu. Le note vengono lette in locale e le risposte generate in locale. Nessuna richiesta e nessuna nota viene mandata a chi ha scritto l'app né a un fornitore di intelligenza artificiale.
+Synapse parla sempre e soltanto con **un indirizzo**: `127.0.0.1:11434`, il demone di Ollama sulla tua macchina. Non contatta mai direttamente un fornitore di intelligenza artificiale, e non ha nessuna chiave per farlo.
 
-Le due eccezioni sono quelle sopra: la ricerca in rete, che manda a DuckDuckGo soltanto le parole cercate, e la lettura di una pagina, che scarica l'indirizzo che hai chiesto.
+Con un modello che hai scaricato e che gira sul tuo computer, le note vengono lette in locale, la risposta è generata in locale, e niente esce di lì.
+
+> ### ⚠️ I modelli cloud di Ollama
+>
+> Ollama può servire anche **modelli cloud**, che girano sui server di Ollama. Se accedi a Ollama e ne scegli uno in Impostazioni → *Intelligenza artificiale*, il demone locale inoltra la richiesta — e con lei **il testo che hai mandato: la tua domanda e la nota che hai aperto**.
+>
+> Quella connessione la apre Ollama, non Synapse, e ricade nell'[informativa di Ollama](https://ollama.com/privacy). Synapse non può vederla né impedirla: dal suo lato l'indirizzo è sempre quello locale.
+>
+> Se vuoi la garanzia che niente esca dal tuo computer, usa un modello scaricato in locale — quelli che installi con `ollama pull`. I modelli cloud si riconoscono dal suffisso `-cloud` nel nome.
+
+Gli altri due casi in cui l'assistente tocca la rete sono quelli già elencati: la ricerca, che manda a DuckDuckGo soltanto le parole cercate, e la lettura di una pagina, che scarica l'indirizzo che hai chiesto.
 
 ## Minori
 

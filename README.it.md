@@ -161,7 +161,7 @@ Sa dove sei (la nota aperta, la cartella in cui stai) e sa chi sei (due righe sc
 ## Privacy
 
 - **Tutto in locale.** Un file SQLite nella tua cartella dati. Nessun account, nessun server, nessuna telemetria.
-- **L'assistente gira sul tuo computer** con Ollama: le note non escono.
+- **L'assistente gira sul tuo computer** con Ollama: con un modello scaricato in locale, le note non escono. L'eccezione sono i modelli *cloud* di Ollama — vedi l'[informativa](PRIVACY.it.md).
 - **Gli archivi password** usano una chiave derivata con **Argon2id** (64 MB, 3 passate) e contenuto cifrato con **AES-256-GCM**, con un nonce nuovo per ogni scrittura.
 - **La password principale non è salvata da nessuna parte.** Se la dimentichi, i segreti sono persi — ed è esattamente la ragione per cui nessun altro può aprirli.
 - **Niente viene mandato da nessuna parte.** Il testo completo è nell'[informativa sulla privacy](PRIVACY.it.md).

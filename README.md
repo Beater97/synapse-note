@@ -161,7 +161,7 @@ It knows where you are (the note you have open, the folder you're in) and who yo
 ## Privacy
 
 - **All local.** A SQLite file in your data folder. No account, no server, no telemetry.
-- **The assistant runs on your machine** with Ollama: your notes don't leave it.
+- **The assistant runs on your machine** with Ollama: with a locally downloaded model, your notes don't leave it. Ollama's *cloud* models are the exception — see the [privacy policy](PRIVACY.md).
 - **Password vaults** use a key derived with **Argon2id** (64 MB, 3 passes) and content encrypted with **AES-256-GCM**, with a fresh nonce for every write.
 - **The master password is stored nowhere.** Forget it and the secrets are lost — which is exactly why nobody else can open them.
 - **Nothing is sent anywhere.** The full statement is in the [privacy policy](PRIVACY.md).

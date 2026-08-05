@@ -46,7 +46,7 @@ Synapse works fully offline. Network connections happen **only** in these cases,
 
 | What you do | Where the request goes | What is sent |
 | --- | --- | --- |
-| Use the AI assistant | `127.0.0.1:11434` — [Ollama](https://ollama.com) on your own machine | your prompt and the note you have open; it does not leave the computer |
+| Use the AI assistant | `127.0.0.1:11434` — [Ollama](https://ollama.com) on your own machine | your prompt and the note you have open. With a locally downloaded model this never leaves the computer; with an Ollama **cloud** model, Ollama forwards it to its servers — see below |
 | Ask the assistant to search the web | `html.duckduckgo.com` | only the search terms |
 | Ask the assistant to read a page, or load an API spec from a URL | the address you provide | only the request itself |
 | Open a web page inside a canvas block | the site you open | whatever a normal browser sends: that site can see you, as any site would |
@@ -54,11 +54,23 @@ Synapse works fully offline. Network connections happen **only** in these cases,
 
 Nothing else. No usage statistics, no "phone home", no update check that carries an identifier. You can verify this with a firewall: block the app entirely and everything except the cases above keeps working.
 
+**Synapse collects nothing in any of these cases.** What a third party does with a request you asked for — DuckDuckGo with your search terms, a website you opened, Ollama with a cloud model — is governed by that party's own privacy policy.
+
 ## The AI assistant
 
-The assistant runs **on your computer**, through Ollama, with a model you downloaded yourself. Your notes are read locally and the answers are generated locally. No prompt and no note is sent to the developer or to any AI provider.
+Synapse always talks to **one address only**: `127.0.0.1:11434`, the Ollama daemon on your own machine. It never contacts an AI provider directly, and it has no API key for one.
 
-The two exceptions are the ones listed above: web search, which sends only your search terms to DuckDuckGo, and reading a web page, which fetches the address you asked for.
+With a model you downloaded and that runs on your machine, your notes are read locally, the answer is generated locally, and nothing leaves the computer.
+
+> ### ⚠️ Ollama cloud models
+>
+> Ollama can also serve **cloud models**, which run on Ollama's servers. If you sign in to Ollama and pick one of those in Settings → *Artificial intelligence*, the local daemon forwards your request onward — and with it **the text you sent: your question and the note you have open**.
+>
+> That connection is made by Ollama, not by Synapse, and it falls under [Ollama's own privacy policy](https://ollama.com/privacy). Synapse cannot see it happen and cannot prevent it: from its side, the address is the same local one.
+>
+> If you want the guarantee that nothing leaves your computer, use a model you have downloaded locally — the ones you install with `ollama pull`. Cloud models are recognisable by the `-cloud` suffix in their name.
+
+The other two cases where the assistant reaches the network are the ones listed above: web search, which sends only your search terms to DuckDuckGo, and reading a web page, which fetches the address you asked for.
 
 ## Children
 
