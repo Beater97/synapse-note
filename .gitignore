@@ -1,0 +1,21 @@
+# Gli eseguibili non si committano: vanno allegati a una Release.
+#
+# Non è pignoleria — un installer da 60 MB dentro la storia di git ci resta per sempre, anche
+# dopo averlo cancellato, e ogni clone se lo porta dietro. Le Release stanno fuori dalla storia:
+# si sostituiscono, si cancellano, e non pesano su chi scarica solo il testo.
+*.exe
+*.msi
+*.zip
+*.synapsebak
+
+# roba di sistema e dell'editor
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
+
+# se un giorno si prova il sito in locale
+_site/
+.jekyll-cache/
+Gemfile.lock
