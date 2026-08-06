@@ -4,7 +4,7 @@
 
 **Your notes, on your computer. Eight kinds of note, a real editor for each one, and an assistant that runs locally.**
 
-[![Download](https://img.shields.io/badge/Download-Windows-2ea44f?style=for-the-badge)](../../releases/latest)
+[![Download](https://img.shields.io/badge/Download-Windows-2ea44f?style=for-the-badge)](https://apps.microsoft.com/detail/9N8XRTWQGWRS?hl=it-it&gl=IT&ocid=pdpshare)
 [![Version](https://img.shields.io/badge/version-1.6.5-blue?style=for-the-badge)](../../releases)
 [![Platform](https://img.shields.io/badge/Windows-10%20and%2011-0078D4?style=for-the-badge&logo=windows)](../../releases/latest)
 
