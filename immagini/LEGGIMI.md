@@ -3,14 +3,23 @@
 Metti qui i file, con **questi nomi esatti** — il README li cerca per nome, e finché non ci sono
 mostra il riquadro dell'immagine rotta.
 
-| File | Cosa mostrare | Dove compare |
+| File | Cosa mostra | Dove compare |
 | --- | --- | --- |
-| `home.png` | la home con le categorie colorate e lo sfondo | in cima, sotto i badge |
-| `postit.png` | un postit con la barra di formattazione e la colonna allegati | griglia dei tipi |
-| `foglio.png` | un foglio con dentro delle formule e un totale | griglia dei tipi |
-| `diagramma.png` | sorgente a sinistra, disegno a destra | griglia dei tipi |
-| `tela.png` | una tela con qualche blocco e una freccia | griglia dei tipi |
-| `ai.png` | la colonna dell'assistente con la traccia dei passi | sezione Synapse AI |
+| `home.png` | la home con le categorie colorate e l'alberatura | in cima, sotto i badge |
+| `postit.png` | un postit | griglia dei tipi, in alto a sinistra |
+| `liste.png` | una lista con le caselle da spuntare | griglia dei tipi, in alto a destra |
+| `notebook.png` | un notebook con una cella Python e il suo output | griglia dei tipi, in basso a sinistra |
+| `board.png` | una tela con dei blocchi appoggiati sopra | griglia dei tipi, in basso a destra |
+| `ai.png` | l'assistente | sezione Synapse AI |
+
+Sono banner 16:9 con la frase già stampata sopra, non schermate nude. Cambiandone una, tienile
+nello stesso stile: quattro immagini in griglia con due trattamenti diversi si vedono subito.
+
+**Le frasi sopra le immagini sono in italiano, anche nel README inglese.** Chi arriva da fuori
+vede l'interfaccia in inglese e il fumetto in italiano. Non è grave — l'app si capisce lo stesso
+— ma il giorno che rifai i banner, farne una serie in inglese è la cosa che alza di più la
+qualità della pagina. In quel caso i file inglesi vanno accanto agli altri (`home-en.png`, e
+così via), e il README inglese punta a quelli.
 
 ## Come si fanno
 

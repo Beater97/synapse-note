@@ -75,10 +75,10 @@ That's not an implementation detail, it's the rule everything else stands on:
 
 | | |
 | :---: | :---: |
-| <img src="immagini/postit.png" alt="A postit" width="420"> | <img src="immagini/foglio.png" alt="A spreadsheet" width="420"> |
-| **Postit** — rich text, attachments, links between notes | **Sheet** — formulas, filters, validation |
-| <img src="immagini/diagramma.png" alt="A diagram" width="420"> | <img src="immagini/tela.png" alt="A canvas" width="420"> |
-| **Diagram** — you write it, it draws itself | **Canvas** — blocks on an endless plane |
+| <img src="immagini/postit.png" alt="A postit" width="420"> | <img src="immagini/liste.png" alt="A checklist" width="420"> |
+| **Postit** — rich text, attachments, links between notes | **List** — checkboxes, due dates, priorities |
+| <img src="immagini/notebook.png" alt="A notebook with a Python cell" width="420"> | <img src="immagini/board.png" alt="A canvas with blocks on it" width="420"> |
+| **Notebook** — Python and Node cells that actually run | **Canvas** — blocks on an endless plane |
 
 </div>
 

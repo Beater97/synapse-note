@@ -75,10 +75,10 @@ Non è un dettaglio tecnico, è la regola che tiene in piedi il resto:
 
 | | |
 | :---: | :---: |
-| <img src="immagini/postit.png" alt="Un postit" width="420"> | <img src="immagini/foglio.png" alt="Un foglio di calcolo" width="420"> |
-| **Postit** — testo ricco, allegati, collegamenti fra note | **Foglio** — formule, filtri, validazione |
-| <img src="immagini/diagramma.png" alt="Un diagramma" width="420"> | <img src="immagini/tela.png" alt="Una tela" width="420"> |
-| **Diagramma** — lo scrivi, si disegna | **Tela** — blocchi su un piano infinito |
+| <img src="immagini/postit.png" alt="Un postit" width="420"> | <img src="immagini/liste.png" alt="Una lista con le caselle da spuntare" width="420"> |
+| **Postit** — testo ricco, allegati, collegamenti fra note | **Lista** — caselle, scadenze, priorità |
+| <img src="immagini/notebook.png" alt="Un notebook con una cella Python" width="420"> | <img src="immagini/board.png" alt="Una tela con dei blocchi appoggiati sopra" width="420"> |
+| **Notebook** — celle Python e Node che girano davvero | **Tela** — blocchi su un piano infinito |
 
 </div>
 
