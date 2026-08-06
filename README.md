@@ -12,7 +12,7 @@
 
 <br>
 
-<img src="immagini/home.png" alt="The Synapse home screen" width="860">
+<img src="immagini/EN/03_home_workspace_en.png" alt="The Synapse home screen" width="860">
 
 </div>
 
@@ -75,9 +75,9 @@ That's not an implementation detail, it's the rule everything else stands on:
 
 | | |
 | :---: | :---: |
-| <img src="immagini/postit.png" alt="A postit" width="420"> | <img src="immagini/liste.png" alt="A checklist" width="420"> |
+| <img src="immagini/EN/06_postits_en.png" alt="A postit" width="420"> | <img src="immagini/EN/04_list_note_en.png" alt="A checklist" width="420"> |
 | **Postit** — rich text, attachments, links between notes | **List** — checkboxes, due dates, priorities |
-| <img src="immagini/notebook.png" alt="A notebook with a Python cell" width="420"> | <img src="immagini/board.png" alt="A canvas with blocks on it" width="420"> |
+| <img src="immagini/EN/05_notebook_en.png" alt="A notebook with a Python cell" width="420"> | <img src="immagini/EN/02_infinite_board_en.png" alt="A canvas with blocks on it" width="420"> |
 | **Notebook** — Python and Node cells that actually run | **Canvas** — blocks on an endless plane |
 
 </div>
@@ -113,7 +113,7 @@ The note that isn't a note: its data doesn't live in the content, it lives **enc
 ## Synapse AI
 
 <div align="center">
-<img src="immagini/ai.png" alt="The Synapse AI panel" width="860">
+<img src="immagini/EN/01_ai_sidebar_en.png" alt="The Synapse AI panel" width="860">
 </div>
 
 An assistant that runs **locally** with [Ollama](https://ollama.com). No text leaves your computer.

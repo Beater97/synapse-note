@@ -12,7 +12,7 @@
 
 <br>
 
-<img src="immagini/home.png" alt="La home di Synapse" width="860">
+<img src="immagini/IT/home.png" alt="La home di Synapse" width="860">
 
 </div>
 
@@ -75,9 +75,9 @@ Non è un dettaglio tecnico, è la regola che tiene in piedi il resto:
 
 | | |
 | :---: | :---: |
-| <img src="immagini/postit.png" alt="Un postit" width="420"> | <img src="immagini/liste.png" alt="Una lista con le caselle da spuntare" width="420"> |
+| <img src="immagini/IT/postit.png" alt="Un postit" width="420"> | <img src="immagini/IT/liste.png" alt="Una lista con le caselle da spuntare" width="420"> |
 | **Postit** — testo ricco, allegati, collegamenti fra note | **Lista** — caselle, scadenze, priorità |
-| <img src="immagini/notebook.png" alt="Un notebook con una cella Python" width="420"> | <img src="immagini/board.png" alt="Una tela con dei blocchi appoggiati sopra" width="420"> |
+| <img src="immagini/IT/notebook.png" alt="Un notebook con una cella Python" width="420"> | <img src="immagini/IT/board.png" alt="Una tela con dei blocchi appoggiati sopra" width="420"> |
 | **Notebook** — celle Python e Node che girano davvero | **Tela** — blocchi su un piano infinito |
 
 </div>
@@ -113,7 +113,7 @@ La nota che non è una nota: i suoi dati non stanno nel contenuto, stanno **cifr
 ## Synapse AI
 
 <div align="center">
-<img src="immagini/ai.png" alt="Il pannello di Synapse AI" width="860">
+<img src="immagini/IT/ai.png" alt="Il pannello di Synapse AI" width="860">
 </div>
 
 Un assistente che gira **in locale** con [Ollama](https://ollama.com). Nessun testo esce dal computer.
