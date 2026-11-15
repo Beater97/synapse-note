@@ -1,0 +1,95 @@
+<!doctype html>
+{%- comment -%}
+  Il guscio di ogni pagina del sito. Il contenuto resta quello dei README e delle informative:
+  qui ci sono solo la barra in alto, la testata (sulle due home) e il piè di pagina.
+{%- endcomment -%}
+{%- if page.path contains '.it.' -%}{%- assign lang = 'it' -%}{%- else -%}{%- assign lang = 'en' -%}{%- endif -%}
+{%- assign t = site.data.ui[lang] -%}
+{%- assign home = false -%}{%- if page.path contains 'README' -%}{%- assign home = true -%}{%- endif -%}
+{%- comment -%} La stessa pagina nell'altra lingua: README ↔ README.it, PRIVACY ↔ PRIVACY.it {%- endcomment -%}
+{%- if lang == 'it' -%}
+  {%- assign other = page.url | replace: '.it.html', '.html' -%}
+  {%- if other == '/README.html' -%}{%- assign other = '/' -%}{%- endif -%}
+{%- else -%}
+  {%- if page.url == '/' -%}{%- assign other = '/README.it.html' -%}{%- else -%}{%- assign other = page.url | replace: '.html', '.it.html' -%}{%- endif -%}
+{%- endif -%}
+{%- assign store = 'https://apps.microsoft.com/detail/9N8XRTWQGWRS' -%}
+{%- assign repo = 'https://github.com/Beater97/synapse-note' -%}
+<html lang="{{ lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if home %}{{ site.title }} · {{ t.title | remove: '.' }}{% else %}{{ page.title | default: site.title }} · {{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ t.lead }}">
+  <meta name="theme-color" content="#15131c">
+  <meta property="og:title" content="{{ site.title }}">
+  <meta property="og:description" content="{{ t.lead }}">
+  <meta property="og:image" content="{{ site.github.url }}/immagini/{{ lang | upcase }}/01-home.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="alternate" hreflang="{{ t.switch_lang }}" href="{{ other | relative_url }}">
+  <link rel="icon" href="{{ '/assets/icon.png' | relative_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}">
+</head>
+<body>
+  <header class="bar">
+    <div class="wrap bar-row">
+      <a class="brand" href="{{ t.home | relative_url }}">
+        <img src="{{ '/assets/icon.png' | relative_url }}" alt="" width="28" height="28">
+        <span>Synapse <span class="brand-sub">Note</span></span>
+      </a>
+      <nav class="bar-links" aria-label="{% if lang == 'it' %}Sezioni{% else %}Sections{% endif %}">
+        {%- for l in t.nav %}
+        <a href="{{ t.home | relative_url }}#{{ l.id }}">{{ l.label }}</a>
+        {%- endfor %}
+      </nav>
+      <div class="bar-end">
+        <a class="lang" href="{{ other | relative_url }}" hreflang="{{ t.switch_lang }}" lang="{{ t.switch_lang }}">{{ t.switch }}</a>
+        <a class="btn btn-sm" href="{{ store }}">{{ t.get }}</a>
+      </div>
+    </div>
+  </header>
+
+  {%- if home %}
+  <section class="hero">
+    <div class="wrap wrap-wide">
+      <p class="eyebrow">Synapse Note</p>
+      <h1>{{ t.title }}</h1>
+      <p class="lead">{{ t.lead }}</p>
+      <div class="cta">
+        <a class="btn" href="{{ store }}">{{ t.store }}</a>
+        <a class="btn btn-ghost" href="{{ repo }}/releases/latest">{{ t.installer }}</a>
+      </div>
+      <p class="hero-meta">
+        {%- if site.github.latest_release.tag_name %}v{{ site.github.latest_release.tag_name | remove_first: 'v' }} · {% endif -%}
+        {{ t.meta }}
+      </p>
+      <img class="shot" src="{{ t.hero_img | relative_url }}" alt="{{ t.hero_alt }}" width="1674" height="674">
+    </div>
+  </section>
+  {%- endif %}
+
+  <main class="wrap prose{% if home %} is-home{% endif %}">
+{{ content }}
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-row">
+      <span>{{ t.made }} <strong>Danilo Scrignoli</strong> · Windows · Tauri 2 · SQLite</span>
+      <nav>
+        <a href="{{ t.privacy_href | relative_url }}">{{ t.privacy }}</a>
+        <a href="{{ repo }}/blob/main/LICENZA.md">{{ t.license }}</a>
+        <a href="{{ repo }}">GitHub</a>
+        <a href="{{ store }}">Microsoft Store</a>
+      </nav>
+    </div>
+  </footer>
+  <script>
+    document.querySelectorAll(".prose thead").forEach(function (h) {
+      if (!h.textContent.trim()) h.hidden = true;
+    });
+  </script>
+</body>
+</html>

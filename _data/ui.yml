@@ -1,0 +1,50 @@
+# Le scritte del sito che non stanno nei README: barra in alto, testata, piè di pagina.
+# Una voce per lingua; il layout sceglie dal nome del file (`.it.` → it, il resto → en).
+# Gli `id` della barra sono le ancore dei titoli `##` del README di quella lingua: se un
+# titolo cambia, va cambiato anche qui.
+
+en:
+  home: /
+  title: Your notes, on your computer.
+  lead: Ten kinds of note, a real editor for each one, sharing between PCs, and an AI assistant that runs locally or online.
+  store: Get it from Microsoft Store
+  installer: Download the installer
+  meta: Free · Windows 10 and 11 · No account
+  get: Download
+  hero_img: /assets/hero-en.webp
+  hero_alt: The Synapse home screen, with coloured category cards
+  nav:
+    - { id: the-ten-kinds-of-note, label: Features }
+    - { id: sharing, label: Sharing }
+    - { id: synapse-ai, label: AI }
+    - { id: privacy, label: Privacy }
+    - { id: questions, label: FAQ }
+  made: Made by
+  privacy: Privacy policy
+  privacy_href: /PRIVACY.html
+  license: License
+  switch: Italiano
+  switch_lang: it
+
+it:
+  home: /README.it.html
+  title: Le tue note, sul tuo computer.
+  lead: Dieci tipi di nota, un editor vero per ognuno, la condivisione fra PC e un assistente AI, in locale o in rete.
+  store: Scarica dal Microsoft Store
+  installer: Scarica l'installer
+  meta: Gratis · Windows 10 e 11 · Nessun account
+  get: Scarica
+  hero_img: /assets/hero-it.webp
+  hero_alt: La home di Synapse, con le schede colorate delle categorie
+  nav:
+    - { id: i-dieci-tipi-di-nota, label: Funzioni }
+    - { id: condivisione, label: Condivisione }
+    - { id: synapse-ai, label: AI }
+    - { id: privacy, label: Privacy }
+    - { id: domande, label: Domande }
+  made: Fatta da
+  privacy: Informativa privacy
+  privacy_href: /PRIVACY.it.html
+  license: Licenza
+  switch: English
+  switch_lang: en
