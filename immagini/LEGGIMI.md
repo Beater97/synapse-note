@@ -1,17 +1,22 @@
 # Le immagini del README
 
 Due serie, una per lingua: `IT/` la usa [README.it.md](../README.it.md), `EN/` la usa
-[README.md](../README.md). I README cercano i file per nome — se un nome cambia da una parte,
-va cambiato anche nel README che lo punta, altrimenti resta il riquadro dell'immagine rotta.
+[README.md](../README.md). I file hanno **lo stesso nome** nelle due cartelle, e sono gli stessi
+che escono da `store/out/<lingua>/` nel progetto dell'app: si ricopiano da lì senza rinominare.
+I README cercano i file per nome — se un nome cambia, va cambiato anche nei README che lo
+puntano, altrimenti resta il riquadro dell'immagine rotta.
 
-| Cosa mostra | `IT/` | `EN/` | Dove compare |
-| --- | --- | --- | --- |
-| la home con le categorie colorate e l'alberatura | `home.png` | `03_home_workspace_en.png` | in cima, sotto i badge |
-| un postit | `postit.png` | `06_postits_en.png` | griglia dei tipi, in alto a sinistra |
-| una lista con le caselle da spuntare | `liste.png` | `04_list_note_en.png` | griglia dei tipi, in alto a destra |
-| un notebook con una cella Python e il suo output | `notebook.png` | `05_notebook_en.png` | griglia dei tipi, in basso a sinistra |
-| una tela con dei blocchi appoggiati sopra | `board.png` | `02_infinite_board_en.png` | griglia dei tipi, in basso a destra |
-| l'assistente | `ai.png` | `01_ai_sidebar_en.png` | sezione Synapse AI |
+| File | Cosa mostra | Dove compare |
+| --- | --- | --- |
+| `01-home.png` | la home con le categorie colorate | in cima, sotto i badge |
+| `02-postit.png` | un postit | griglia dei tipi, riga 1 a sinistra |
+| `09-lista.png` | una lista con le caselle da spuntare | griglia dei tipi, riga 1 a destra |
+| `03-foglio.png` | un foglio con le formule | griglia dei tipi, riga 2 a sinistra |
+| `08-notebook.png` | un notebook con una cella Python e il suo output | griglia dei tipi, riga 2 a destra |
+| `05-tela.png` | una tela con dei blocchi appoggiati sopra | griglia dei tipi, riga 3 a sinistra |
+| `07-immagine.png` | un'immagine annotata | griglia dei tipi, riga 3 a destra |
+| `06-condivisione.png` | il pannello Condivisioni | sezione Condivisione |
+| `04-ai.png` | l'assistente | sezione Synapse AI |
 
 Sono banner 16:9 con la frase già stampata sopra, non schermate nude. Cambiandone una, tienile
 nello stesso stile: quattro immagini in griglia con due trattamenti diversi si vedono subito.

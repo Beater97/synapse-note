@@ -12,7 +12,7 @@
 
 <br>
 
-<img src="immagini/IT/home.png" alt="La home di Synapse" width="860">
+<img src="immagini/IT/01-home.png" alt="La home di Synapse" width="860">
 
 </div>
 
@@ -80,10 +80,12 @@ Non è un dettaglio tecnico, è la regola che tiene in piedi il resto:
 
 | | |
 | :---: | :---: |
-| <img src="immagini/IT/postit.png" alt="Un postit" width="420"> | <img src="immagini/IT/liste.png" alt="Una lista con le caselle da spuntare" width="420"> |
+| <img src="immagini/IT/02-postit.png" alt="Un postit" width="420"> | <img src="immagini/IT/09-lista.png" alt="Una lista con le caselle da spuntare" width="420"> |
 | **Postit**: testo ricco, allegati, collegamenti fra note | **Lista**: caselle, scadenze, priorità |
-| <img src="immagini/IT/notebook.png" alt="Un notebook con una cella Python" width="420"> | <img src="immagini/IT/board.png" alt="Una tela con dei blocchi sopra" width="420"> |
-| **Notebook**: celle Python e Node che girano davvero | **Tela**: blocchi su un piano senza fine |
+| <img src="immagini/IT/03-foglio.png" alt="Un foglio di calcolo con formule" width="420"> | <img src="immagini/IT/08-notebook.png" alt="Un notebook con una cella Python" width="420"> |
+| **Foglio**: formule vere, filtri, celle unite | **Notebook**: celle Python e Node che girano davvero |
+| <img src="immagini/IT/05-tela.png" alt="Una tela con dei blocchi sopra" width="420"> | <img src="immagini/IT/07-immagine.png" alt="Un'immagine annotata" width="420"> |
+| **Tela**: blocchi su un piano senza fine | **Immagine**: annotazioni sopra, l'originale intatto |
 
 </div>
 
@@ -135,6 +137,10 @@ Ogni tipo di nota può avere **#tag** e **@collegamenti** ad altre note, dalla b
 
 ## Condivisione
 
+<div align="center">
+<img src="immagini/IT/06-condivisione.png" alt="Il pannello Condivisioni con i link pubblici aperti" width="860">
+</div>
+
 Due cose diverse, che avvii tu e fermi quando vuoi. Le trovi tutte in un posto solo: **Condivisioni**, nella barra in alto.
 
 **Link pubblico.** Il mappamondo dentro una nota crea un link che si apre in qualunque browser, per ogni tipo di nota tranne gli archivi di password. Synapse serve la pagina dal tuo computer attraverso un tunnel gratuito di Cloudflare (senza account). Il link vale **10 minuti**, e solo finché Synapse è aperto; il tempo che resta si vede in Condivisioni. Condividendo una tela partono anche le note collegate.
@@ -150,7 +156,7 @@ Due cose diverse, che avvii tu e fermi quando vuoi. Le trovi tutte in un posto s
 ## Synapse AI
 
 <div align="center">
-<img src="immagini/IT/ai.png" alt="Il pannello di Synapse AI" width="860">
+<img src="immagini/IT/04-ai.png" alt="Il pannello di Synapse AI" width="860">
 </div>
 
 Un assistente con gli strumenti veri dell'app. Scegli tu chi risponde, al primo avvio o in Impostazioni → *Intelligenza artificiale*:

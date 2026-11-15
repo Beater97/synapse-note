@@ -12,7 +12,7 @@
 
 <br>
 
-<img src="immagini/EN/03_home_workspace_en.png" alt="The Synapse home screen" width="860">
+<img src="immagini/EN/01-home.png" alt="The Synapse home screen" width="860">
 
 </div>
 
@@ -80,10 +80,12 @@ That's not an implementation detail, it's the rule everything else stands on:
 
 | | |
 | :---: | :---: |
-| <img src="immagini/EN/06_postits_en.png" alt="A postit" width="420"> | <img src="immagini/EN/04_list_note_en.png" alt="A checklist" width="420"> |
+| <img src="immagini/EN/02-postit.png" alt="A postit" width="420"> | <img src="immagini/EN/09-lista.png" alt="A checklist" width="420"> |
 | **Postit**: rich text, attachments, links between notes | **List**: checkboxes, due dates, priorities |
-| <img src="immagini/EN/05_notebook_en.png" alt="A notebook with a Python cell" width="420"> | <img src="immagini/EN/02_infinite_board_en.png" alt="A canvas with blocks on it" width="420"> |
-| **Notebook**: Python and Node cells that actually run | **Canvas**: blocks on an endless plane |
+| <img src="immagini/EN/03-foglio.png" alt="A spreadsheet with formulas" width="420"> | <img src="immagini/EN/08-notebook.png" alt="A notebook with a Python cell" width="420"> |
+| **Sheet**: real formulas, filters, merged cells | **Notebook**: Python and Node cells that actually run |
+| <img src="immagini/EN/05-tela.png" alt="A canvas with blocks on it" width="420"> | <img src="immagini/EN/07-immagine.png" alt="An annotated image" width="420"> |
+| **Canvas**: blocks on an endless plane | **Image**: annotations on top, the original untouched |
 
 </div>
 
@@ -135,6 +137,10 @@ Every kind of note can have **#tags** and **@links** to other notes, from the ba
 
 ## Sharing
 
+<div align="center">
+<img src="immagini/EN/06-condivisione.png" alt="The Sharing panel with open public links" width="860">
+</div>
+
 Two different things, both started by you and stopped whenever you want. Everything is in one place: **Sharing**, in the top bar.
 
 **Public link.** The globe inside a note creates a link that opens in any browser, for every kind of note except password vaults. Synapse serves the page from your own computer through a free Cloudflare tunnel (no account needed). The link lasts **10 minutes**, and only while Synapse is open; the time left is shown in Sharing. Sharing a canvas also sends the notes it links to.
@@ -150,7 +156,7 @@ Two different things, both started by you and stopped whenever you want. Everyth
 ## Synapse AI
 
 <div align="center">
-<img src="immagini/EN/01_ai_sidebar_en.png" alt="The Synapse AI panel" width="860">
+<img src="immagini/EN/04-ai.png" alt="The Synapse AI panel" width="860">
 </div>
 
 An assistant with the app's real tools. You choose who answers, on first launch or in Settings → *Artificial intelligence*:
