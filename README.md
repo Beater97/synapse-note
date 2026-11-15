@@ -1,12 +1,12 @@
-<div align="center">
+<div align="center" markdown="1">
 
 # Synapse
 
 **Your notes, on your computer. Ten kinds of note, a real editor for each one, sharing between PCs, and an AI assistant that runs locally or online.**
 
 [![Download](https://img.shields.io/badge/Download-Windows-2ea44f?style=for-the-badge)](https://apps.microsoft.com/detail/9N8XRTWQGWRS?hl=it-it&gl=IT&ocid=pdpshare)
-[![Version](https://img.shields.io/badge/version-2.2.0-blue?style=for-the-badge)](../../releases)
-[![Platform](https://img.shields.io/badge/Windows-10%20and%2011-0078D4?style=for-the-badge&logo=windows)](../../releases/latest)
+[![Version](https://img.shields.io/badge/version-2.2.1-blue?style=for-the-badge)](https://github.com/Beater97/synapse-note/releases)
+[![Platform](https://img.shields.io/badge/Windows-10%20and%2011-0078D4?style=for-the-badge&logo=windows)](https://github.com/Beater97/synapse-note/releases/latest)
 
 🇬🇧 English · [🇮🇹 Italiano](README.it.md)
 
@@ -30,7 +30,7 @@ What sets it apart from other note apps is that here a note isn't one single thi
 
 ## Download
 
-**[⬇️ Latest version for Windows](../../releases/latest)**, or from the **[Microsoft Store](https://apps.microsoft.com/detail/9N8XRTWQGWRS?hl=it-it&gl=IT&ocid=pdpshare)**.
+**[⬇️ Latest version for Windows](https://github.com/Beater97/synapse-note/releases/latest)**, or from the **[Microsoft Store](https://apps.microsoft.com/detail/9N8XRTWQGWRS?hl=it-it&gl=IT&ocid=pdpshare)**.
 
 Download `Synapse_x.y.z_x64-setup.exe` and open it. Installing takes nothing else.
 
@@ -76,7 +76,7 @@ That's not an implementation detail, it's the rule everything else stands on:
 
 ## The ten kinds of note
 
-<div align="center">
+<div align="center" markdown="1">
 
 | | |
 | :---: | :---: |
@@ -137,7 +137,7 @@ Every kind of note can have **#tags** and **@links** to other notes, from the ba
 
 ## Sharing
 
-<div align="center">
+<div align="center" markdown="1">
 <img src="immagini/EN/06-condivisione.png" alt="The Sharing panel with open public links" width="860">
 </div>
 
@@ -155,7 +155,7 @@ Two different things, both started by you and stopped whenever you want. Everyth
 
 ## Synapse AI
 
-<div align="center">
+<div align="center" markdown="1">
 <img src="immagini/EN/04-ai.png" alt="The Synapse AI panel" width="860">
 </div>
 
@@ -263,7 +263,7 @@ Not in this repository. What's here is the application and its documentation.
 
 ## Reporting a problem
 
-Open an [issue](../../issues) and write what you were doing, what you expected and what happened instead. If the app came up blank or threw an error, attach this file:
+Open an [issue](https://github.com/Beater97/synapse-note/issues) and write what you were doing, what you expected and what happened instead. If the app came up blank or threw an error, attach this file:
 
 ```
 %APPDATA%\com.scrig.synapse\errori.log
@@ -273,7 +273,7 @@ Open an [issue](../../issues) and write what you were doing, what you expected a
 
 ---
 
-<div align="center">
+<div align="center" markdown="1">
 
 Made by **Danilo Scrignoli** · Windows · Tauri 2 · SQLite
 

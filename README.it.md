@@ -1,12 +1,12 @@
-<div align="center">
+<div align="center" markdown="1">
 
 # Synapse
 
 **Le tue note, sul tuo computer. Dieci tipi di nota, un editor vero per ognuno, la condivisione fra PC e un assistente AI che gira in locale o in rete.**
 
-[![Scarica](https://img.shields.io/badge/Scarica-Windows-2ea44f?style=for-the-badge)](../../releases/latest)
-[![Versione](https://img.shields.io/badge/versione-2.2.0-blue?style=for-the-badge)](../../releases)
-[![Piattaforma](https://img.shields.io/badge/Windows-10%20e%2011-0078D4?style=for-the-badge&logo=windows)](../../releases/latest)
+[![Scarica](https://img.shields.io/badge/Scarica-Windows-2ea44f?style=for-the-badge)](https://github.com/Beater97/synapse-note/releases/latest)
+[![Versione](https://img.shields.io/badge/versione-2.2.1-blue?style=for-the-badge)](https://github.com/Beater97/synapse-note/releases)
+[![Piattaforma](https://img.shields.io/badge/Windows-10%20e%2011-0078D4?style=for-the-badge&logo=windows)](https://github.com/Beater97/synapse-note/releases/latest)
 
 [🇬🇧 English](README.md) · 🇮🇹 Italiano
 
@@ -30,7 +30,7 @@ La differenza con le altre app di note è che qui una nota non è una sola cosa:
 
 ## Scarica
 
-**[⬇️ Ultima versione per Windows](../../releases/latest)**, oppure dal **[Microsoft Store](https://apps.microsoft.com/detail/9N8XRTWQGWRS?hl=it-it&gl=IT&ocid=pdpshare)**.
+**[⬇️ Ultima versione per Windows](https://github.com/Beater97/synapse-note/releases/latest)**, oppure dal **[Microsoft Store](https://apps.microsoft.com/detail/9N8XRTWQGWRS?hl=it-it&gl=IT&ocid=pdpshare)**.
 
 Scarica `Synapse_x.y.z_x64-setup.exe` e aprilo. L'installazione non richiede altro.
 
@@ -76,7 +76,7 @@ Non è un dettaglio tecnico, è la regola che tiene in piedi il resto:
 
 ## I dieci tipi di nota
 
-<div align="center">
+<div align="center" markdown="1">
 
 | | |
 | :---: | :---: |
@@ -137,7 +137,7 @@ Ogni tipo di nota può avere **#tag** e **@collegamenti** ad altre note, dalla b
 
 ## Condivisione
 
-<div align="center">
+<div align="center" markdown="1">
 <img src="immagini/IT/06-condivisione.png" alt="Il pannello Condivisioni con i link pubblici aperti" width="860">
 </div>
 
@@ -155,7 +155,7 @@ Due cose diverse, che avvii tu e fermi quando vuoi. Le trovi tutte in un posto s
 
 ## Synapse AI
 
-<div align="center">
+<div align="center" markdown="1">
 <img src="immagini/IT/04-ai.png" alt="Il pannello di Synapse AI" width="860">
 </div>
 
@@ -263,7 +263,7 @@ Non in questa repository. Qui ci sono l'applicazione e la sua documentazione.
 
 ## Segnalare un problema
 
-Apri una [issue](../../issues) e scrivi cosa stavi facendo, cosa ti aspettavi e cosa è successo invece. Se l'app si è aperta vuota o ha dato un errore, allega questo file:
+Apri una [issue](https://github.com/Beater97/synapse-note/issues) e scrivi cosa stavi facendo, cosa ti aspettavi e cosa è successo invece. Se l'app si è aperta vuota o ha dato un errore, allega questo file:
 
 ```
 %APPDATA%\com.scrig.synapse\errori.log
@@ -273,7 +273,7 @@ Apri una [issue](../../issues) e scrivi cosa stavi facendo, cosa ti aspettavi e 
 
 ---
 
-<div align="center">
+<div align="center" markdown="1">
 
 Fatta da **Danilo Scrignoli** · Windows · Tauri 2 · SQLite
 

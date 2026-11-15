@@ -6,8 +6,8 @@
 # Per accenderlo: Settings → Pages → Source: "Deploy from a branch" → main → / (root).
 # Gratis su qualunque repository pubblica.
 
-title: Synapse
-description: Le tue note, sul tuo computer. Dieci tipi di nota, un editor vero per ognuno, la condivisione fra PC e un assistente AI, in locale o in rete.
+title: Synapse Note
+description: Your notes, on your computer. Ten kinds of note, a real editor for each one, sharing between PCs, and an AI assistant that runs locally or online.
 theme: jekyll-theme-cayman
 
 # Niente di quel che sta qui sotto finisce nel sito.
